@@ -1,0 +1,100 @@
+html {
+    font: 16px/20px 'Noto Sans', sans-serif;
+}
+
+.im-main-container {
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    height: 1500px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    background-color: transparent;
+    display: flex
+}
+
+.im-dialog-area {
+    position: relative;
+    flex: 1;
+    background: #208FF9;
+    box-shadow: 20px 20px 5px grey;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.im-list-area {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    height: 80%;
+    width: 100%;
+
+}
+
+.im-search-area {
+    height: 10%;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+.im-list-user-area {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    list-style: none;
+    padding-left: 0;
+}
+
+.im-list-user {
+    height: 120px;
+    background-color: #FFF;
+    margin: 20px;
+}
+
+
+.im-user-area {
+    height: 100%;
+    display: flex;
+}
+
+.im-user-head {
+    height: 100%;
+}
+
+.im-user-head img {
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+    border-width: 1px;
+    border-color: black;
+    border-style: dashed;
+}
+
+.im-user-name {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.im-user-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+
+.im-user-edit img {
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: lightblue;
+    border-style: dashed;
+    box-shadow: 8px 4px 2px rgba(27,25,27,.6);
+}
