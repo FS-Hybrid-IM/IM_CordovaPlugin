@@ -22,9 +22,9 @@
                     <span>your friend miss IM</span>
                 </div>
                 <div id="title-button-area" class="im-title-button-area">
-                    <button class="rkmd-btn btn-fab-mini btn-pink ripple-effect im-email-icons">
+                    <button class="rkmd-btn btn-fab-mini btn-orange ripple-effect im-email-icons">
                     </button>
-                    <button class="rkmd-btn btn-fab-mini btn-lightBlue ripple-effect im-pen-icons">
+                    <button class="rkmd-btn btn-fab-mini btn-amber ripple-effect im-pen-icons">
                     </button>
                 </div>
             </div>
@@ -32,8 +32,8 @@
             </div>
             <div id="talk-area" class="im-talk-area">
                 <ul class="chat-thread">
-                    <li class="right-li">text-shadow: X轴  Y轴  Rpx  color</li>
-                    <li class="left-li">属性说明（顺序依次对应）</li>
+                    <li [ngClass]="{'left-li': dialog.wts === 1, 'right-li': dialog.wts === 2}"class="right-li" *ngFor="let dialog of dialogs">{{ dialog.wts }}</li>
+                    <!-- <li class="left-li">属性说明（顺序依次对应）</li>
                     <li class="right-li">阴影的X轴(可以使用负值)    阴影的Y轴(可以使用负值)    阴影模糊值（大小）    阴影的颜色</li>
                     <li class="left-li">此属性使用于文字阴影，而不是对盒模型进行操作   如果设置盒模型阴影请参考知识点:box-shadow（同理）</li>
                     <li class="right-li"> IE下使用滤镜filter:shadow()</li>
@@ -43,7 +43,7 @@
                     <li class="right-li">-moz-text-shadow:0 0 10px #C06;</li>
                     <li class="left-li">-o-text-shadow:0 0 10px #C06;</li>
                     <li class="right-li">基础练习：(借鉴字体形式展示)</li>
-                    <li class="left-li"><!--1、没有给其X轴与Y轴设置值 所在会在本身发生作用   模糊半径范围，颜色--></li>
+                    <li class="left-li"><!--1、没有给其X轴与Y轴设置值 所在会在本身发生作用   模糊半径范围，颜色--></li> -->
                 </ul>
             </div>
             <div id="input-area" class="im-input-area">

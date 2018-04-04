@@ -1,0 +1,34 @@
+
+<div id="main-container" class="im-main-container">
+    <div id="dialog-area" class="im-dialog-area">
+        <div id="dialog-title" class="im-dialog-title">
+            <div id="target-name" class="im-target-name">
+                <div id="dialog-close" class="im-dialog-close">
+                    <img class="im-close-button" src="../../assets/imgs/close.png">
+                </div>
+                <span>your friend miss IM</span>
+            </div>
+            <div id="title-button-area" class="im-title-button-area">
+                <button class="rkmd-btn btn-fab-mini btn-orange ripple-effect im-email-icons">
+                </button>
+                <button class="rkmd-btn btn-fab-mini btn-amber ripple-effect im-pen-icons">
+                </button>
+            </div>
+        </div>
+        <div id="dialog-target-head" class="im-dialog-target-head">
+        </div>
+        <div id="talk-area" class="im-talk-area">
+            <ul class="chat-thread">
+                <li [ngClass]="{'left-li': dialog.me === 1, 'right-li': dialog.me === 2}" *ngFor="let dialog of dialogs">{{ dialog.wts }}</li>
+            </ul>
+        </div>
+        <div id="input-area" class="im-input-area">
+            <input class="im-input" [(ngModel)]="mText.wts"/>
+            <div class="demo">
+                <button id="im-input-button" class="rkmd-btn btn-xs btn-lightBlue ripple-effect" (click)="addWhatISay()">send</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
